@@ -1,5 +1,5 @@
 {
-  "+U": "{#F14}",
-  "+I": "{PLOVER:SWITCH_SYSTEM:Mejiro}{#F13}"
+  "+U": "{PLOVER:MEJIRO_IME:off}",
+  "+I": "{PLOVER:SWITCH_SYSTEM:Mejiro}{PLOVER:MEJIRO_IME:on}"
 }
 

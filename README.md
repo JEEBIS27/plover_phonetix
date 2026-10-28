@@ -35,8 +35,8 @@ Commands
 |stroke|function|
 |---|-----------|
 |`#`|`repeat_last_translation`|
-|`#E`|`#F14`(IME off)|
-|`#U`|`Switch system to Mejiro (#F13)`(IME on)|
+|`#E`|`MEJIRO_IME:off` (IME off)|
+|`#U`|`SWITCH_SYSTEM:Mejiro` then `MEJIRO_IME:on` (IME on)|
 |`*R`|`BackSpace`|
 |`*F`|`Delete`|
 |`P-P/P-P` or `P*P`|`Space`|
@@ -66,3 +66,5 @@ Commands
 |`KPAO*`|`Capitalize a word from earlier`|
 |`KPAO/KPAO`|`MODE:CAPS`|
 `PHRUP`|`PLOVER:LOOKUP`|
+
+IME commands use the Mejiro plugin: Hangul/Hangul_Hanja on Linux, VK_HANGUL/VK_HANJA on Windows, and Kana/Eisu on macOS. Install Mejiro before using these commands.
