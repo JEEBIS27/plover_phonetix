@@ -1,0 +1,89 @@
+Metadata-Version: 2.4
+Name: Phonetix
+Version: 0.0.0
+Summary: Phonetix
+Home-page: https://github.com/JEEBIS27/plover_phonetix
+Author: JEEBIS27
+Author-email: jeebis.iox@gmail.com
+License: GPL-3.0-or-later
+Project-URL: Source Code, https://github.com/JEEBIS27/plover_phonetix
+Project-URL: Issue Tracker, https://github.com/JEEBIS27/plover_phonetix/issues
+Keywords: plover plover_plugin
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: plover>=5.2.3
+Requires-Dist: plover-system-switcher
+Requires-Dist: plover-last-translation
+Requires-Dist: plover-python-dictionary
+Dynamic: license-file
+
+# Phonetix Theory
+
+Vowel
+
+|stroke|function|
+|------|--------|
+|`A`|`æ`|
+|`O`|`ɒ`|
+|`U`|`ʌ`|
+|`I`|`ɪ`|
+|`AO`|`ɛ`|
+|`UI`|`ʊ`|
+|`AUI`|`y`|
+|`AI`|`aɪ`|
+|`OI`|`ɔɪ`|
+|`AOI`|`eɪ`|
+|`AOUI`|`ɪː`|
+|`OUI`|`ɒː`|
+|`AOU`|`uː juː`|
+|`AU`|`aʊ`|
+|`OU`|`oʊ`|
+
+Special consonant
+
+|stroke|function|
+|------|--------|
+|`-FS`|`ss`|
+|`-SZ`|`st`|
+|`-BGSZ`|`xt`|
+|`-PG`|`nk`|
+|`-LGTS`|`lt`|
+
+Commands
+
+|stroke|function|
+|---|-----------|
+|`#`|`repeat_last_translation`|
+|`#E`|`MEJIRO_IME:off` (IME off)|
+|`#U`|`SWITCH_SYSTEM:Mejiro` then `MEJIRO_IME:on` (IME on)|
+|`*R`|`BackSpace`|
+|`*F`|`Delete`|
+|`P-P/P-P` or `P*P`|`Space`|
+|`WR-RB`|`Tab`|
+|`R-R`|`Return`|
+|`R*R`|`Return`(Capitalize next word)|
+|`PR-RP`|`""`|
+|`PR*RP`|`"(Capitalized)"`|
+|`TP-PL`|`.`|
+|`KW-BG`|`,`|
+|`KW-PL`|`?`|
+|`TP-BG`|`!`|
+|`TP*PL`|`.`(Capitalize next word)|
+|`KW*BG`|`,`(Capitalize next word)|
+|`KW*PL`|`?`(Capitalize next word)|
+|`TP*BG`|`!`(Capitalize next word)|
+|`H-F`|`-`|
+|`H*F`|`_`|
+|`PH-FP`|`Delete a space between before two words`|
+|`PH*FP`|`Delete a space between before two words`(Don't set space next)|
+|`P-P`|`Don't set space next`|
+|`KPO`|`Capitalize a word from earlier`|
+|`KPO*`|`Capitalize a word from earlier and next word`|
+|`KPA`|`Capitalize next word`|
+|`KPA*`|`Capitalize next word and dot't set space at next`|
+|`KPAO`|`CapsLock next word`|
+|`KPAO*`|`Capitalize a word from earlier`|
+|`KPAO/KPAO`|`MODE:CAPS`|
+`PHRUP`|`PLOVER:LOOKUP`|
+
+IME commands use the Mejiro plugin: Hangul/Hangul_Hanja on Linux, VK_HANGUL/VK_HANJA on Windows, and Kana/Eisu on macOS. Install Mejiro before using these commands.

@@ -1,0 +1,4 @@
+plover>=5.2.3
+plover-system-switcher
+plover-last-translation
+plover-python-dictionary
